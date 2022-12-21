@@ -169,7 +169,7 @@ body #section1 {
 }
 .content p{
     font-weight: var(--font-regular);
-    margin: 20px auto;
+    margin: 50px 300px;
     line-height: 25px;
 }
 .content button{
