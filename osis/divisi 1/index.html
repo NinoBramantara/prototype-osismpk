@@ -16,6 +16,9 @@
     <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
     <!--================================ ANIMATE.CSS ================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--=============================== SCROLL ANIMATION ===========================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <section class="section1" id="section1"> 
@@ -52,10 +55,10 @@
     <section class="section3">
         <div class="container">
             <div class="title">
-                <h2>Program Kerja</h2>
+                <h2 data-aos="zoom-in">Program Kerja</h2>
             </div>
             <div class="main">
-                <div class="content">
+                <div class="content" data-aos="fade-up">
                     <ul class="list-proker">
                         <li>
                             KEROHANIAN ISLAM (ROHIS)
@@ -70,14 +73,14 @@
     </section>
     <section class="section4">
         <div class="container">
-            <div class="kadiv-img">
+            <div class="kadiv-img" data-aos="fade-right">
                 <img src="image/DIV_1_AKIN_WITRI_GAOMA-removebg-preview.png" alt="Akin Witri Gaoma">
             </div>
             <div class="content">
-                <div class="desc">
-                    <h3>Ketua Divisi 1</h3>
-                    <h2>Akin Witri Gaoma</h2>
-                    <a href="https://instagram.com/witriakin?igshid=YmMyMTA2M2Y="><button class="intagram">
+                <div>
+                    <h3 data-aos="fade-left">Ketua Divisi 1</h3>
+                    <h2 data-aos="fade-left">Akin Witri Gaoma</h2>
+                    <a href="https://instagram.com/witriakin?igshid=YmMyMTA2M2Y="><button class="intagram" data-aos="fade-left">
                         <i class="fab fa-instagram"></i>
                     </button></a>
                 </div>
@@ -86,13 +89,13 @@
     </section>
     <section class="section5">
         <div class="container">
-            <div class="title">
+            <div class="title" data-aos="zoom-in">
                 <h2>Anggota</h2>
             </div>
             <div class="content">
                 <div class="anggota-wrapper">
                     <ul class="card">
-                        <li class="anggota anggota-1">
+                        <li class="anggota anggota-1" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
                             <img src="image/DIV_1_ALBERTUS_SETYAWAN_KRISTIYADI-removebg-preview.png" alt="Albertus Setyawan Kristiyadi">
                             <div class="desc">
                                 <h4>Albertus Setyawan Kristiyadi</h4>
@@ -111,6 +114,7 @@
     
     <!--========================== JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
     <script>
+        AOS.init();
         var navLinks = document.getElementById ('navLinks');
         function navMenu(){
             navLinks.style.right = 0;
