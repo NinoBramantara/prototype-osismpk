@@ -268,11 +268,12 @@ body #section1 {
 .section4 .kadiv-img{
     width: auto;
     height: auto;
+    margin-top: -5vh;
     margin-left: -15rem;
 }
 .section4 .kadiv-img img{
     width: auto;
-    height: 70vh;
+    height: 80vh;
 }
 .section4 .content{
     display: flex;
@@ -695,7 +696,7 @@ body #section1 {
     .section4 .kadiv-img{
         width: auto;
         height: auto;
-        margin-left: 0;
+        margin-left: 0px;
     }
     .section4 .kadiv-img img{
         width: auto;

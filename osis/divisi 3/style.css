@@ -167,7 +167,7 @@ body #section1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(image/divisi1.png); 
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(image/divisi3.png); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,11 +268,11 @@ body #section1 {
 .section4 .kadiv-img{
     width: auto;
     height: auto;
-    margin-left: -25rem;
+    margin-left: -20rem;
 }
 .section4 .kadiv-img img{
     width: auto;
-    height: 70vh;
+    height: 80vh;
 }
 .section4 .content{
     display: flex;
