@@ -16,6 +16,9 @@
     <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
     <!--================================ ANIMATE.CSS ================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--=============================== SCROLL ANIMATION ===========================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <section class="section1" id="section1"> 
@@ -29,8 +32,8 @@
                             <i class="fa fa-times" onclick="navExit()"></i>
                             <ul>
                                 <a href="../../index.html" class="home"><li>Home</li></a>
-                                <a href=#mpk class="mpk"><li>MPK</li></a>
-                                <a href=#osis class="osis"><li>OSIS</li></a>
+                                <a href="../../index.html#mpk" class="mpk"><li>MPK</li></a>
+                                <a href=../../index.html#osis class="osis"><li>OSIS</li></a>
                                 <a href="../../aspirasi/index.html"><li class="aspirasi2">Aspirasi</li></a>
                             </ul>
                         </nav>
@@ -45,23 +48,26 @@
     </section>
     <section class="section2">
         <div class="content">
-            <h2>DIVISI 1</h2>
-            <h3>PEMBINAAN DAN KETAQWAAN TUHAN YANG MAHA ESA</h3>
+            <h2>DIVISI 2</h2>
+            <h3>PEMBINAAN BUDI PEKERTI LUHUR ATAU AKHLAK MULIA</h3>
         </div>
     </section>
     <section class="section3">
         <div class="container">
             <div class="title">
-                <h2>Program Kerja</h2>
+                <h2 data-aos="zoom-in">Program Kerja</h2>
             </div>
             <div class="main">
-                <div class="content">
+                <div class="content" data-aos="fade-up">
                     <ul class="list-proker">
                         <li>
-                            KEROHANIAN ISLAM (ROHIS)
+                            PERINGATAN HARI GURU
                         </li>
                         <li>
-                            KEROHANIAN KATOLIK KRISTEN (ROKHA ROKRIS)
+                            BAKTI SOSIAL (BAKSOS)
+                        </li>
+                        <li>
+                            INSPEKSI DADAKAN (SIDAK)
                         </li>
                     </ul>
                 </div>
@@ -70,14 +76,14 @@
     </section>
     <section class="section4">
         <div class="container">
-            <div class="kadiv-img">
-                <img src="image/DIV_1_AKIN_WITRI_GAOMA-removebg-preview.png" alt="Akin Witri Gaoma">
+            <div class="kadiv-img" data-aos="fade-right">
+                <img src="image/DIV_2_NAFISA_QURROTA_A-removebg-preview.png" alt="Nafisa Qurrota Ayun">
             </div>
             <div class="content">
-                <div class="desc">
-                    <h3>Ketua Divisi 1</h3>
-                    <h2>Akin Witri Gaoma</h2>
-                    <a href="https://instagram.com/witriakin?igshid=YmMyMTA2M2Y="><button class="intagram">
+                <div>
+                    <h3 data-aos="fade-left">Ketua Divisi 2</h3>
+                    <h2 data-aos="fade-left">Nafisa Qurrota Ayun</h2>
+                    <a href="https://instagram.com/nafisaayun_?igshid=YmMyMTA2M2Y="><button class="intagram" data-aos="fade-left">
                         <i class="fab fa-instagram"></i>
                     </button></a>
                 </div>
@@ -86,18 +92,18 @@
     </section>
     <section class="section5">
         <div class="container">
-            <div class="title">
+            <div class="title" data-aos="zoom-in">
                 <h2>Anggota</h2>
             </div>
             <div class="content">
                 <div class="anggota-wrapper">
                     <ul class="card">
-                        <li class="anggota anggota-1">
-                            <img src="image/DIV_1_ALBERTUS_SETYAWAN_KRISTIYADI-removebg-preview.png" alt="Albertus Setyawan Kristiyadi">
+                        <li class="anggota anggota-1" data-aos="zoom-in-up" data-aos-anchor-placement="top-center">
+                            <img src="image/DIV_2_AGHNA_HASBIAN-removebg-preview.png" alt="Aghna Hasbian Nuur">
                             <div class="desc">
-                                <h4>Albertus Setyawan Kristiyadi</h4>
+                                <h4>Aghna Hasbian Nuur</h4>
                                 <span><h5>Anggota</h5></span>
-                                <a href="https://www.instagram.com/albertus_setyawan/"><button class="instagram">
+                                <a href="https://instagram.com/aghnahasbian_?igshid=YmMyMTA2M2Y="><button class="instagram">
                                     <i class="fab fa-instagram"></i>
                                 </button></a>
                             </div>
@@ -111,6 +117,7 @@
     
     <!--========================== JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
     <script>
+        AOS.init();
         var navLinks = document.getElementById ('navLinks');
         function navMenu(){
             navLinks.style.right = 0;
