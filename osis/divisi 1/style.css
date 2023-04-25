@@ -43,11 +43,11 @@ html {
 
 .banner{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(media/images/cover/cover2.jpeg); 
-    background-size: cover;
+    height: 15vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(../../media/images/cover/Contoh\ profil\ divisi.png); 
+    background-size: contain;
     background-position: center;
-    position: absolute;
+    position: absolute; */
 }
 /*background*/
 
@@ -133,7 +133,7 @@ nav li:hover::after{
 /*contact button animation*/
 
 body #section1 {
-    height: 100vh;
+    height: auto;
     width: auto;
 }
 
@@ -159,112 +159,43 @@ body #section1 {
     display: none;
 }
 
-.section1 .content{
-    height: 50%;
-    width: 100%;
-    transform: translateY(50%);
-    text-align: center;
-    position: absolute;
-}
-.section1 .content h1{
-    font-size: 55px;
-    margin: 5px 0;
-    font-weight: var(--font-semi-bold);
-}
-.section1 .content p{
-    font-weight: var(--font-regular);
-    margin: 50px 300px;
-    line-height: 25px;
-    font-size: 20px;
-}
-.section1 .content button{
-    width:200px;
-    padding: 5px 20px;
-    color: lightgray;
-    font-size: 18px;
-    background-color: transparent;
-    border-color: #2ebde8;
-    border-radius: 25px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-}
-/*button below .section1 content*/
-.section1 .content span{
-    height: 100%;
-    width: 0%;
-    background-color: #2ebde8;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-/*orange span in the button when hover*/
-.section1 .content button:hover span{
-    width: 100%;
-}
-/*span will appear when button hover*/
-.section1 .content button:hover{
-    border:none;
-}
-/* .section1 .content{
-    margin-bottom: 400px;
-} */
-
 
 .section2{
-    height: 50vh;
+    top: 10%;
+    height: 100vh;
     width: 100%;
-}
-.section2 .container{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(../../media/images/cover/Contoh\ profil\ divisi.png); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.section2 .title{
-    font-weight: var(--font-semi-bold);
-    font-size: 35px;
-    margin-top: 2vh;
-}
-.section2 .main{
-    height: auto;
-    width: 100%;
-    margin-top: 5vh;
-}
-.section2 .main ul{
+.section2 .content{
     display: flex;
-    justify-content: space-around;
     flex-wrap: nowrap;
-    flex-direction: row;
+    align-items: center;
+    margin-top: 25em;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 25em;
 }
-.section2 .main ul a{
-    text-decoration: none;
+.section2 .content h2{
+    font-size: 40px;
+    font-weight: var(--font-bold);
 }
-.section2 .main ul li{
-    display: grid;
-    place-content: center;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    height: 150px;
-    width: 300px;
-    background-color: rgb(24, 43, 65);
-    border-radius: 25px;
-    margin: 15px;
-}
-.section2 .main ul li h2{
-    font-size: 25px;
-    text-align: center;
+.section2 .content h3{
+    font-size: 30px;
+    font-weight: var(--font-bold);
 }
 
 .section3{
-    min-height: 100vh;
+    min-height: 50vh;
     height: auto;
     width: 100%;
+    display: grid;
+    place-content: center;
     padding-bottom: 0.5vh;
 }
 .section3 .container{
@@ -277,17 +208,17 @@ body #section1 {
 .section3 .title{
     font-weight: var(--font-semi-bold);
     font-size: 35px;
-    margin-top: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
 }
 .section3 .main{
     height: auto;
-    width: 100%;
-    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
 }
 .section3 .main .content{
     display: flex;
     flex-wrap: wrap;
-    margin:-10px;
 }
 .section3 .main ul{
     display: flex;
@@ -307,6 +238,102 @@ body #section1 {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
+    height: 200px;
+    width: 350px;
+    background-color: rgb(24, 43, 65);
+    border-radius: 25px;
+    margin: 15px;
+    color: white;
+}
+.section3 .main ul li{
+    font-size: 20px;
+    text-align: center;
+}
+.section4{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    margin-top: 5vh;
+    /* padding-bottom: 0.5vh; */
+}
+.section4 .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+}
+.section4 .kadiv-img{
+    width: auto;
+    height: auto;
+    margin-left: -25rem;
+}
+.section4 .kadiv-img img{
+    width: auto;
+    height: 70vh;
+}
+.section4 .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin:-10px;
+}
+.section4 .content .desc{
+    margin-left: -10rem;
+    width: auto;
+    height: auto;
+}
+.section4 .content h3{
+    font-weight: var(--font-bold);
+    font-size: 30px;
+}
+.section4 .content h2{
+    font-weight: var(--font-regular);
+    font-size: 40px;
+}
+.section4 .content button{
+    width: 60px;
+    height: 60px;
+    margin-left: -0.8rem;
+    cursor: pointer;
+    background-color: #001e24;
+    border: none;
+    border-radius: 50%;
+    font-size: 35px;
+    color: white;
+    transition: 0.5s;
+}
+.section4 .content button:hover{
+    background-color: rgb(24, 43, 65);
+    color : #fa4e6d;
+}
+.section4 .main{
+    height: auto;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.section4 .main ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.section4 .main a{
+    text-decoration: none;
+}
+.section4 .main ul li{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
     height: 150px;
     width: 250px;
     background-color: rgb(24, 43, 65);
@@ -314,9 +341,82 @@ body #section1 {
     margin: 15px;
     color: white;
 }
-.section3 .main ul li h2{
+.section4 .main ul li h2{
     font-size: 25px;
     text-align: center;
+}
+
+.section5{
+    height: auto;
+    width: 100%;
+    margin-top: -10vh;
+}
+.section5 .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.section5 .title{
+    font-weight: var(--font-semi-bold);
+    font-size: 35px;
+}
+
+.section5 .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section5 .content .anggota-wrapper ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.section5 .anggota-wrapper ul li{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    height: 70vh;
+    width: 50vh;
+    background-color: rgb(24, 43, 65);
+    border-radius: 25px;
+    margin: 15px;
+    color: white;
+}
+.section5 .anggota-wrapper ul li h4{
+    font-size: 20px;
+}
+.section5 .anggota-wrapper ul li span{
+    display: grid;
+    place-content: center;
+    width: 90px;
+    border-radius: 30px;
+    background-color: #2ebde8;
+}
+.section5 .anggota-wrapper ul li button{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -2px;
+    cursor: pointer;
+    background-color: rgb(20, 36, 55);
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+}
+.section5 .anggota-wrapper ul li button:hover{
+    color: #fa4e6d;
 }
 
 
