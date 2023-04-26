@@ -16,6 +16,8 @@
     <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
     <!--================================ ANIMATE.CSS ================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--================================ jQuery ================================-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="section1" id="section1"> 
@@ -77,7 +79,7 @@
             <div class="main">
                 <div class="content">
                     <ul class="osis_divisi">
-                        <a href="">
+                        <a href="osis/pho/index.html">
                             <li class="pho"><h2>Pengurus Harian OSIS</h2></li>
                         </a>
                         <a href="osis/divisi 1/index.html">
@@ -163,6 +165,28 @@
         function navExit(){
             navLinks.style.right = '-200px';
         }
+
+
+        // smooth scrolling jQuery :
+
+        jQuery($ => {
+             // The speed of the scroll in milliseconds
+            const speed = 500;
+
+            $('a[href*="#"]')
+            .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+            .unbind('click.smoothScroll')
+            .bind('click.smoothScroll', event => {
+                const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+                }
+            });
+        });
+
     </script>
 </body>
 </html>
