@@ -173,7 +173,7 @@ body #section1 {
 }
 .section1 .content p{
     font-weight: var(--font-regular);
-    margin: 50px 300px;
+    margin: -20px 300px 30px 300px;
     line-height: 25px;
     font-size: 20px;
 }
@@ -212,6 +212,12 @@ body #section1 {
 /* .section1 .content{
     margin-bottom: 400px;
 } */
+.section1 .content p .strong-font1{
+    font-weight: var(--font-bold);
+}
+.section1 .content p .strong-font2{
+    font-weight: var(--font-bold);
+}
 
 
 .section2{
