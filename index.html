@@ -16,6 +16,9 @@
     <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
     <!--================================ ANIMATE.CSS ================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!--=============================== SCROLL ANIMATION ===========================-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--================================ jQuery ================================-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
@@ -51,18 +54,18 @@
     <section class="section2"  id="mpk">
         <div class="container">
             <div class="title">
-                <h1>MPK</h1>
+                <h1 data-aos="fade-up">MPK</h1>
             </div>
             <div class="main">
                 <div class="content">
                     <ul class="mpk_komisi">
-                        <a href=""><li class="phm">
-                            <h2>Pengurus Harian MPK</h2>
+                        <a href="mpk/phm/index.html"><li class="phm" data-aos="zoom-out">
+                            <h2>Pengurus Umum MPK</h2>
                         </li></a>
-                        <a href=""><li class="komisi1">
+                        <a href="mpk/komisi A/index.html"><li class="komisi1" data-aos="zoom-out">
                             <h2>KOMISI A</h2>
                         </li></a>
-                        <a href=""><li class="komisi2">
+                        <a href="mpk/komisi B/index.html"><li class="komisi2" data-aos="zoom-out">
                             <h2>KOMISI B</h2>
                         </li></a>
                     </ul>
@@ -74,43 +77,43 @@
     <section class="section3" id="osis">
         <div class="container">
             <div class="title">
-                <h1>OSIS</h1>
+                <h1 data-aos="fade-up">OSIS</h1>
             </div>
             <div class="main">
                 <div class="content">
                     <ul class="osis_divisi">
                         <a href="osis/pho/index.html">
-                            <li class="pho"><h2>Pengurus Harian OSIS</h2></li>
+                            <li class="pho" data-aos="zoom-out"><h2>Pengurus Harian OSIS</h2></li>
                         </a>
                         <a href="osis/divisi 1/index.html">
-                            <li class="divisi1"><h2>DIVISI 1</h2></li>
+                            <li class="divisi1" data-aos="zoom-out"><h2>DIVISI 1</h2></li>
                         </a>
                         <a href="osis/divisi 2/index.html">
-                            <li class="divisi2"><h2>DIVISI 2</h2></li>
+                            <li class="divisi2" data-aos="zoom-out"><h2>DIVISI 2</h2></li>
                         </a>
                         <a href="osis/divisi 3/index.html">
-                            <li class="divisi3"><h2>DIVISI 3</h2></li>
+                            <li class="divisi3" data-aos="zoom-out"><h2>DIVISI 3</h2></li>
                         </a>
                         <a href="osis/divisi 4/index.html">
-                            <li class="divisi4"><h2>DIVISI 4</h2></li>
+                            <li class="divisi4" data-aos="zoom-out"><h2>DIVISI 4</h2></li>
                         </a>
                         <a href="osis/divisi 5/index.html">
-                            <li class="divisi5"><h2>DIVISI 5</h2></li>
+                            <li class="divisi5" data-aos="zoom-out"><h2>DIVISI 5</h2></li>
                         </a>
                         <a href="osis/divisi 6/index.html">
-                            <li class="divisi6"><h2>DIVISI 6</h2></li>
+                            <li class="divisi6" data-aos="zoom-out"><h2>DIVISI 6</h2></li>
                         </a>
                         <a href="osis/divisi 7/index.html">
-                            <li class="divisi7"><h2>DIVISI 7</h2></li>
+                            <li class="divisi7" data-aos="zoom-out"><h2>DIVISI 7</h2></li>
                         </a>
                         <a href="osis/divisi 8/index.html">
-                            <li class="divisi8"><h2>DIVISI 8</h2></li>
+                            <li class="divisi8" data-aos="zoom-out"><h2>DIVISI 8</h2></li>
                         </a>
                         <a href="osis/divisi 9/index.html">
-                            <li class="divisi9"><h2>DIVISI 9</h2></li>
+                            <li class="divisi9" data-aos="zoom-out"><h2>DIVISI 9</h2></li>
                         </a>
                         <a href="osis/divisi 10/index.html">
-                            <li class="divisi10"><h2>DIVISI 10</h2></li>
+                            <li class="divisi10" data-aos="zoom-out"><h2>DIVISI 10</h2></li>
                         </a>
                     </ul>
                 </div>
@@ -158,6 +161,7 @@
     </section> -->
     <!--========================== JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
     <script>
+        AOS.init();
         var navLinks = document.getElementById ('navLinks');
         function navMenu(){
             navLinks.style.right = 0;
