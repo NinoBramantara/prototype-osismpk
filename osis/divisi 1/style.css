@@ -551,7 +551,7 @@ body #section1 {
         /*style the navigation on the mobile devices*/
         position: absolute;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         background: rgba(46, 189, 232,0.95);
